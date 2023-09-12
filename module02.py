@@ -34,5 +34,22 @@ print(type(is_a_student))
 print(f"My name is {name} and I am {age} years old." )
 print(f"The value of pi to 2 decimal places is {pi:.2f}")
 print(f"Age zero-filled is {age:05}")
-print(f"Hello: {name:> }")
+print(f"Hello: {name:>10}")
 print(f"${salary:,.2f}")
+
+#type conversions
+age = 25
+salary = 67750.21
+
+age_and_salary = age + salary
+
+months_old = "11"
+years_old = 25
+
+age = years_old + (float(months_old) / 12)
+
+print(age)
+print(f"Age as a float: {age:.2f}")
+
+age = int(age)
+print(age)
