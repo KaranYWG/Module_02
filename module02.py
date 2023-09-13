@@ -113,4 +113,5 @@ power **= 2
 result = 10 + 5 * 2 / 3 - 1
 print(result)  
 
-result = ((10 + 5)*2)/3 -1
+result = ((10 + 5) * 2) /3 - 1
+print(result)
