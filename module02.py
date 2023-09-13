@@ -26,6 +26,7 @@ name = "John"
 age = 20
 pi = 3.15445
 is_a_student = True
+salary = 45000
 print(type(name))
 print(type(age))
 print(type(pi))
