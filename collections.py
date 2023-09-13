@@ -79,3 +79,33 @@ print(red_river_list[-1])
 print(red_river_list[-1: -5: -1])
 
 #
+provinces = ('BC', 'AB', 'MB', 'SK')
+print(provinces[2])
+
+# tuples are immutable. The only way to change a value is to redefine the tuple
+# provinces = ('BC', 'AB', 'Manitoba', 'SK')
+
+single_string = ('string')
+print("single_string: " , type(single_string))
+
+single_tuple = ('one_item')
+print("single_tuple:" , type(single_tuple))
+
+random_tuple = (1, 66, 3, 7, 42, 78, 12, 55)
+length = len(random_tuple)
+print(length)
+
+maximum = max(random_tuple)
+minimum = min(random_tuple)
+print("max: ", maximum, "min: ", minimum) 
+
+sum = sum(random_tuple)
+
+# returns the sorted list
+sorted_list = sorted(random_tuple)
+print(sorted_list)
+
+list_of_numbers = [1, 2, 3]
+tuple_of_numbers = tuple(list_of_numbers)
+print(list_of_numbers)
+print(tuple_of_numbers)
