@@ -109,3 +109,81 @@ list_of_numbers = [1, 2, 3]
 tuple_of_numbers = tuple(list_of_numbers)
 print(list_of_numbers)
 print(tuple_of_numbers)
+
+# dictionary
+# key value pair
+# not ordered
+# {}
+fruit_dictionary = {'apples': 23 , 'bananas': 59 , 'oranges' : 10 }
+
+print(fruit_dictionary[ 'apples']) #23
+
+fruit_dictionary['apples'] = 100
+print(fruit_dictionary)
+
+fruit_dictionary['plums'] = 49
+print(fruit_dictionary)
+
+print(fruit_dictionary.keys())
+print(fruit_dictionary.values())
+
+
+# print(fruit_dictionary['bbbbbbb'])
+
+print(fruit_dictionary.get('bbbbbbbb' , 'not found'))
+print(fruit_dictionary.get('bananas' , 'not found'))
+
+
+fruit_dictionary['banana'] = 500
+
+print(fruit_dictionary)
+
+fruit_dictionary.pop('apples')
+print(fruit_dictionary)
+
+fruit_dictionary.clear()
+
+
+# sets
+# unordered
+# every element is unique
+# muables
+# tuples starts with {}
+
+# SETS
+
+primes = {2, 3, 5, 7, 11, 13, 17, 19, 23 }
+
+# fives = {} this will produce an empty dictionary
+fives = set() # uses the sets function to create an empty repository
+ 
+fives.add(5)
+fives.add(10)
+fives.add(15)
+fives.add(20)
+
+print(primes)
+print(fives)
+
+primes.remove(13)
+ # primes.remove(100)
+
+primes.discard(11)
+primes.discard(100)
+
+print(primes)
+print(fives)
+
+union = primes.union(fives)
+print(union)
+
+
+common = primes.intersection(fives)
+print(common)
+
+primes_difference = primes.difference(fives)
+print(primes_difference)
+
+
+
+
